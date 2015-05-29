@@ -54,7 +54,7 @@
 	mysql_close($link);
 	?>
 	
-	<form action="viewer.html">
+	<form action="tezt2.html">
     <input type="submit" value="Back to Homepage">
 	</form>
 	</body>
