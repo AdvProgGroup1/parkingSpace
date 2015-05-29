@@ -1,6 +1,8 @@
 <html>
+
 	<head>
 	<title>Retrieve data from database </title>
+	<link rel="stylesheet" type="text/css" href="test.css">
 	</head>
 	<body>
 
@@ -23,14 +25,14 @@
 	// Connecting, selecting database
 	$link = mysql_connect('localhost', 'root', '')
 		or die('Could not connect: ' . mysql_error());
-	echo 'Connected successfully';
+	//echo 'Connected successfully';
 	mysql_select_db('parkingarea') or die('Could not select database');
 	
 	// SQL query
 	//$query = "SELECT * FROM parkingSpace WHERE STATUS = '1'";
 	$IDbook = $_POST["abc"];
-	$Orang = $_POST["def"];
-	echo $Orang;
+	//$Orang = $_POST["def"];
+	//echo $Orang;
 	
 	//$strSQL = "Update parkingSpace set "; 
 	//$strSQL = $strSQL . "STATUS= '1', "; 
@@ -38,9 +40,9 @@
 
 	//$strSQL = $strSQL . "WHERE ID = $IDbook"; 
 	
-	$query = "UPDATE parkingSpace SET BOOKER =  $Orang, STATUS = '1'  WHERE ID = $IDbook";
+	$query = "UPDATE parkingSpace SET BOOKER = 'abc', STATUS = '1'  WHERE ID = $IDbook";
 	$result = mysql_query($query) or die('Query failed: ' . mysql_error());
-	echo "change successfully";
+	//echo "change successfully";
 	// Execute the query (the recordset $rs contains the result)
 	//$rs = mysql_query($strSQL);
 	
@@ -64,4 +66,15 @@
 	mysql_close($link);
 	?>
 	</body>
+	
+	<form id="msform">
+	<fieldset>
+		<h2 class="fs-title">Thank You for Your Booking</h2>
+		<h3 class="fs-title">Your Booking has been proceed to the database</h3>
+		<a href="tezt.html">
+			<input type="button" value="Home" class="next action-button"/>
+		</a>
+	 </fieldset>
+</form>
+	
 	</html>
