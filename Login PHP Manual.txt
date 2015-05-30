@@ -1,9 +1,8 @@
 Changes:
 
-1. Login now integrated with Risdani's system.
-2. The Login part which previousy made by JSP now in PHP.
-3. Some features removed, such as "read username and password from file", "security login",
-and "Security Check", due to time needed to changes everything from JSP-PHP.  
+1. Login now integrated with Risdani's system in PHP version (JSP is not integrated yet).
+2. Features included in JSP version such as "read username and password from file", "security login",
+and "Security Check", are not included in this PHP version.  
 
 How to use:
 1. Open tezt.php instead of tezt.html.
