@@ -1,0 +1,12 @@
+Changes:
+
+1. Login now integrated with Risdani's system.
+2. The Login part which previousy made by JSP now in PHP.
+3. Some features removed, such as "read username and password from file", "security login",
+and "Security Check", due to time needed to changes everything from JSP-PHP.  
+
+How to use:
+1. Open tezt.php instead of tezt.html.
+2. Login can be done with username "group1" and password "12345"
+3. It will redirect to the booking page.
+ 
